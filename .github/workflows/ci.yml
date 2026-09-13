@@ -323,6 +323,12 @@ jobs:
         id: ridgeline_tests
         run: python scripts/test-verify-ridgeline.py
 
+      - name: Verify compact bar rankings and checker
+        if: always()
+        run: |
+          python scripts/verify-bar-ranking.py
+          python scripts/test-verify-bar-ranking.py
+
       - name: Verify bubble positions and area encoding
         if: always()
         id: bubble

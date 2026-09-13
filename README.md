@@ -496,6 +496,10 @@ diagram-design/
 
 This keeps the agent's working context tight: routine diagrams load one type reference; behavior-rich diagrams add the routed semantic reference; animation adds its contract only when selected.
 
+### Compact country rankings
+
+For a complete comparison such as all 27 EU countries, use the [compact ranking bar variant](skills/diagram-design/references/bar-ranking.md). It supports up to 30 rows, one highlighted country, and two named benchmarks without splitting the population into a top eight. Examples: [light](skills/diagram-design/assets/example-bar-ranking.html), [dark](skills/diagram-design/assets/example-bar-ranking-dark.html), and [full editorial](skills/diagram-design/assets/example-bar-ranking-full.html). The example values are transcribed from a user-provided image and are explicitly marked as unverified. Use your own validated data and provenance for publication.
+
 ### Contributing / skin lint
 
 Before submitting a new example, run `python3 scripts/lint-skin.py <your-new-example.html>`.

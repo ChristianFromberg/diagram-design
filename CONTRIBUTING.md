@@ -73,6 +73,7 @@ Every validation gate below must pass before a PR is ready. They also run automa
 | Waterfall running-total conservation and signed-bridge geometry | `python3 scripts/verify-waterfall.py --all` |
 | Waterfall checker behaves (pass + adversarial cases) | `python3 scripts/test-verify-waterfall.py` |
 | Bubble positions sit on shared axis scales and area encodes every declared size | `python3 scripts/verify-bubble.py --all` |
+| Compact country rankings share a zero-based scale, correct values/median, and matching variants | `python3 scripts/verify-bar-ranking.py && python3 scripts/test-verify-bar-ranking.py` |
 | Bubble checker behaves (pass + adversarial cases) | `python3 scripts/test-verify-bubble.py` |
 | Bump vertices sit exactly on one rank grid and every endpoint label is placed on both axes | `python3 scripts/verify-bump.py --all` |
 | Bump checker behaves (pass + adversarial cases) | `python3 scripts/test-verify-bump.py` |

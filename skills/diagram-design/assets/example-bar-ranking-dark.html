@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompakt landerangering · Diagram Design-dark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --color-paper:#2d3142; --color-ink:#f5f5f5; --color-muted:#bfc0c0; --color-accent:#f08a59; }
+    body { background:var(--color-paper); color:var(--color-ink); font-family:'Geist', system-ui, sans-serif; padding:24px; }
+    main { max-width:760px; margin:0 auto; }
+    .chart-scroll { overflow-x:auto; }
+    .chart-scroll:focus-visible { outline:2px solid var(--color-accent); outline-offset:4px; }
+    svg { display:block; width:100%; min-width:760px; font-family:'Geist', system-ui, sans-serif; font-variant-numeric:tabular-nums; }
+    .scroll-hint { display:none; font-size:12px; color:var(--color-muted); margin-bottom:12px; }
+    aside { margin:24px; padding-top:20px; border-top:1px solid rgba(245,245,245,0.12); }
+    aside p { font-size:12px; line-height:1.6; color:var(--color-muted); margin-bottom:12px; max-width:72ch; }
+    aside .aside-title { font-family:'Instrument Serif', serif; font-size:24px; color:var(--color-ink); line-height:1.2; }
+    @media (max-width:807px) { body { padding:16px; } .scroll-hint { display:block; } }
+    @media print { body { padding:0; } .scroll-hint { display:none; } svg { min-width:0; } .chart-scroll { overflow:visible; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="scroll-hint">Rul vandret for at se hele diagrammet. Alle 27 lande er vist.</p>
+    <div class="chart-scroll" role="region" aria-label="Landerangering, 27 lande" tabindex="0">
+      <svg viewBox="0 0 760 648" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bar-ranking-dark-title bar-ranking-dark-desc" data-chart="bar-ranking" data-axis-min="0" data-axis-max="70" data-plot-left="148" data-plot-width="560" data-row-count="27">
+<title id="bar-ranking-dark-title">Danmark ligger højest blandt 27 lande</title>
+<desc id="bar-ranking-dark-desc">Rangordnet sammenligning af grundbetaling og smålandbrugerordninger af 27 lande med Danmark højest på 65,5 %, baseret på tal aflæst fra et brugerleveret billede.</desc>
+<rect width="100%" height="100%" fill="#2d3142"/>
+<text x="24" y="24" font-size="8" fill="#bfc0c0" font-family="'Geist Mono', monospace" letter-spacing="0.12em">LANDEFORDELING / EU-27</text>
+<text x="24" y="56" font-size="28" fill="#f5f5f5" font-family="'Instrument Serif', serif">Danmark ligger højest blandt 27 lande</text>
+<text x="24" y="80" font-size="12" fill="#bfc0c0" >Grundbetaling og smålandbrugerordninger</text>
+<line x1="148" y1="104" x2="148" y2="544" stroke="rgba(245,245,245,0.25)"/>
+<text x="148" y="568" font-size="12" fill="#bfc0c0" text-anchor="middle" data-tick="0">0 %</text>
+<line x1="308" y1="104" x2="308" y2="544" stroke="rgba(245,245,245,0.08)"/>
+<text x="308" y="568" font-size="12" fill="#bfc0c0" text-anchor="middle" data-tick="20">20 %</text>
+<line x1="468" y1="104" x2="468" y2="544" stroke="rgba(245,245,245,0.08)"/>
+<text x="468" y="568" font-size="12" fill="#bfc0c0" text-anchor="middle" data-tick="40">40 %</text>
+<line x1="628" y1="104" x2="628" y2="544" stroke="rgba(245,245,245,0.08)"/>
+<text x="628" y="568" font-size="12" fill="#bfc0c0" text-anchor="middle" data-tick="60">60 %</text>
+<line x1="708" y1="104" x2="708" y2="544" stroke="rgba(245,245,245,0.08)"/>
+<text x="708" y="568" font-size="12" fill="#bfc0c0" text-anchor="middle" data-tick="70">70 %</text>
+<g data-country="Danmark" data-value="65.5" data-focal="true">
+<rect class="bar" x="148" y="108" width="524.000" height="8" fill="#f08a59" fill-opacity="1"/>
+</g>
+<g data-country="Irland" data-value="48.5" data-focal="false">
+<rect class="bar" x="148" y="124" width="388.000" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Sverige" data-value="45.7" data-focal="false">
+<rect class="bar" x="148" y="140" width="365.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Tyskland" data-value="44.6" data-focal="false">
+<rect class="bar" x="148" y="156" width="356.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Ungarn" data-value="43.4" data-focal="false">
+<rect class="bar" x="148" y="172" width="347.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Nederlandene" data-value="41.8" data-focal="false">
+<rect class="bar" x="148" y="188" width="334.400" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Cypern" data-value="40.7" data-focal="false">
+<rect class="bar" x="148" y="204" width="325.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Spanien" data-value="40.7" data-focal="false">
+<rect class="bar" x="148" y="220" width="325.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Østrig" data-value="40.1" data-focal="false">
+<rect class="bar" x="148" y="236" width="320.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Polen" data-value="38.4" data-focal="false">
+<rect class="bar" x="148" y="252" width="307.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Estland" data-value="37.0" data-focal="false">
+<rect class="bar" x="148" y="268" width="296.000" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Frankrig" data-value="36.6" data-focal="false">
+<rect class="bar" x="148" y="284" width="292.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Letland" data-value="36.1" data-focal="false">
+<rect class="bar" x="148" y="300" width="288.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Luxembourg" data-value="35.7" data-focal="false">
+<rect class="bar" x="148" y="316" width="285.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Bulgarien" data-value="35.5" data-focal="false">
+<rect class="bar" x="148" y="332" width="284.000" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Grækenland" data-value="34.5" data-focal="false">
+<rect class="bar" x="148" y="348" width="276.000" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Slovenien" data-value="34.4" data-focal="false">
+<rect class="bar" x="148" y="364" width="275.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Finland" data-value="34.0" data-focal="false">
+<rect class="bar" x="148" y="380" width="272.000" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Belgien" data-value="33.4" data-focal="false">
+<rect class="bar" x="148" y="396" width="267.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Rumænien" data-value="32.6" data-focal="false">
+<rect class="bar" x="148" y="412" width="260.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Italien" data-value="32.3" data-focal="false">
+<rect class="bar" x="148" y="428" width="258.400" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Portugal" data-value="30.7" data-focal="false">
+<rect class="bar" x="148" y="444" width="245.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Slovakiet" data-value="29.1" data-focal="false">
+<rect class="bar" x="148" y="460" width="232.800" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Litauen" data-value="28.8" data-focal="false">
+<rect class="bar" x="148" y="476" width="230.400" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Tjekkiet" data-value="23.2" data-focal="false">
+<rect class="bar" x="148" y="492" width="185.600" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Kroatien" data-value="21.4" data-focal="false">
+<rect class="bar" x="148" y="508" width="171.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<g data-country="Malta" data-value="13.9" data-focal="false">
+<rect class="bar" x="148" y="524" width="111.200" height="8" fill="#bfc0c0" fill-opacity="0.65"/>
+</g>
+<text x="132" y="116" font-size="12" fill="#f5f5f5" text-anchor="end" font-weight="600">Danmark</text>
+<rect x="678.000" y="105" width="48" height="14" fill="#2d3142"/>
+<text x="680.000" y="116" font-size="12" fill="#f5f5f5" data-label="Danmark" font-weight="600">65,5 %</text>
+<text x="132" y="132" font-size="12" fill="#f5f5f5" text-anchor="end" >Irland</text>
+<rect x="542.000" y="121" width="48" height="14" fill="#2d3142"/>
+<text x="544.000" y="132" font-size="12" fill="#f5f5f5" data-label="Irland" >48,5 %</text>
+<text x="132" y="148" font-size="12" fill="#f5f5f5" text-anchor="end" >Sverige</text>
+<rect x="519.600" y="137" width="48" height="14" fill="#2d3142"/>
+<text x="521.600" y="148" font-size="12" fill="#f5f5f5" data-label="Sverige" >45,7 %</text>
+<text x="132" y="164" font-size="12" fill="#f5f5f5" text-anchor="end" >Tyskland</text>
+<rect x="510.800" y="153" width="48" height="14" fill="#2d3142"/>
+<text x="512.800" y="164" font-size="12" fill="#f5f5f5" data-label="Tyskland" >44,6 %</text>
+<text x="132" y="180" font-size="12" fill="#f5f5f5" text-anchor="end" >Ungarn</text>
+<rect x="501.200" y="169" width="48" height="14" fill="#2d3142"/>
+<text x="503.200" y="180" font-size="12" fill="#f5f5f5" data-label="Ungarn" >43,4 %</text>
+<text x="132" y="196" font-size="12" fill="#f5f5f5" text-anchor="end" >Nederlandene</text>
+<rect x="488.400" y="185" width="48" height="14" fill="#2d3142"/>
+<text x="490.400" y="196" font-size="12" fill="#f5f5f5" data-label="Nederlandene" >41,8 %</text>
+<text x="132" y="212" font-size="12" fill="#f5f5f5" text-anchor="end" >Cypern</text>
+<rect x="479.600" y="201" width="48" height="14" fill="#2d3142"/>
+<text x="481.600" y="212" font-size="12" fill="#f5f5f5" data-label="Cypern" >40,7 %</text>
+<text x="132" y="228" font-size="12" fill="#f5f5f5" text-anchor="end" >Spanien</text>
+<rect x="479.600" y="217" width="48" height="14" fill="#2d3142"/>
+<text x="481.600" y="228" font-size="12" fill="#f5f5f5" data-label="Spanien" >40,7 %</text>
+<text x="132" y="244" font-size="12" fill="#f5f5f5" text-anchor="end" >Østrig</text>
+<rect x="474.800" y="233" width="48" height="14" fill="#2d3142"/>
+<text x="476.800" y="244" font-size="12" fill="#f5f5f5" data-label="Østrig" >40,1 %</text>
+<text x="132" y="260" font-size="12" fill="#f5f5f5" text-anchor="end" >Polen</text>
+<rect x="461.200" y="249" width="48" height="14" fill="#2d3142"/>
+<text x="463.200" y="260" font-size="12" fill="#f5f5f5" data-label="Polen" >38,4 %</text>
+<text x="132" y="276" font-size="12" fill="#f5f5f5" text-anchor="end" >Estland</text>
+<rect x="450.000" y="265" width="48" height="14" fill="#2d3142"/>
+<text x="452.000" y="276" font-size="12" fill="#f5f5f5" data-label="Estland" >37,0 %</text>
+<text x="132" y="292" font-size="12" fill="#f5f5f5" text-anchor="end" >Frankrig</text>
+<rect x="446.800" y="281" width="48" height="14" fill="#2d3142"/>
+<text x="448.800" y="292" font-size="12" fill="#f5f5f5" data-label="Frankrig" >36,6 %</text>
+<text x="132" y="308" font-size="12" fill="#f5f5f5" text-anchor="end" >Letland</text>
+<rect x="442.800" y="297" width="48" height="14" fill="#2d3142"/>
+<text x="444.800" y="308" font-size="12" fill="#f5f5f5" data-label="Letland" >36,1 %</text>
+<text x="132" y="324" font-size="12" fill="#f5f5f5" text-anchor="end" >Luxembourg</text>
+<rect x="439.600" y="313" width="48" height="14" fill="#2d3142"/>
+<text x="441.600" y="324" font-size="12" fill="#f5f5f5" data-label="Luxembourg" >35,7 %</text>
+<text x="132" y="340" font-size="12" fill="#f5f5f5" text-anchor="end" >Bulgarien</text>
+<rect x="438.000" y="329" width="48" height="14" fill="#2d3142"/>
+<text x="440.000" y="340" font-size="12" fill="#f5f5f5" data-label="Bulgarien" >35,5 %</text>
+<text x="132" y="356" font-size="12" fill="#f5f5f5" text-anchor="end" >Grækenland</text>
+<rect x="430.000" y="345" width="48" height="14" fill="#2d3142"/>
+<text x="432.000" y="356" font-size="12" fill="#f5f5f5" data-label="Grækenland" >34,5 %</text>
+<text x="132" y="372" font-size="12" fill="#f5f5f5" text-anchor="end" >Slovenien</text>
+<rect x="429.200" y="361" width="48" height="14" fill="#2d3142"/>
+<text x="431.200" y="372" font-size="12" fill="#f5f5f5" data-label="Slovenien" >34,4 %</text>
+<text x="132" y="388" font-size="12" fill="#f5f5f5" text-anchor="end" >Finland</text>
+<rect x="426.000" y="377" width="48" height="14" fill="#2d3142"/>
+<text x="428.000" y="388" font-size="12" fill="#f5f5f5" data-label="Finland" >34,0 %</text>
+<text x="132" y="404" font-size="12" fill="#f5f5f5" text-anchor="end" >Belgien</text>
+<rect x="421.200" y="393" width="48" height="14" fill="#2d3142"/>
+<text x="423.200" y="404" font-size="12" fill="#f5f5f5" data-label="Belgien" >33,4 %</text>
+<text x="132" y="420" font-size="12" fill="#f5f5f5" text-anchor="end" >Rumænien</text>
+<rect x="414.800" y="409" width="48" height="14" fill="#2d3142"/>
+<text x="416.800" y="420" font-size="12" fill="#f5f5f5" data-label="Rumænien" >32,6 %</text>
+<text x="132" y="436" font-size="12" fill="#f5f5f5" text-anchor="end" >Italien</text>
+<rect x="412.400" y="425" width="48" height="14" fill="#2d3142"/>
+<text x="414.400" y="436" font-size="12" fill="#f5f5f5" data-label="Italien" >32,3 %</text>
+<text x="132" y="452" font-size="12" fill="#f5f5f5" text-anchor="end" >Portugal</text>
+<rect x="399.600" y="441" width="48" height="14" fill="#2d3142"/>
+<text x="401.600" y="452" font-size="12" fill="#f5f5f5" data-label="Portugal" >30,7 %</text>
+<text x="132" y="468" font-size="12" fill="#f5f5f5" text-anchor="end" >Slovakiet</text>
+<rect x="386.800" y="457" width="48" height="14" fill="#2d3142"/>
+<text x="388.800" y="468" font-size="12" fill="#f5f5f5" data-label="Slovakiet" >29,1 %</text>
+<text x="132" y="484" font-size="12" fill="#f5f5f5" text-anchor="end" >Litauen</text>
+<rect x="384.400" y="473" width="48" height="14" fill="#2d3142"/>
+<text x="386.400" y="484" font-size="12" fill="#f5f5f5" data-label="Litauen" >28,8 %</text>
+<text x="132" y="500" font-size="12" fill="#f5f5f5" text-anchor="end" >Tjekkiet</text>
+<rect x="339.600" y="489" width="48" height="14" fill="#2d3142"/>
+<text x="341.600" y="500" font-size="12" fill="#f5f5f5" data-label="Tjekkiet" >23,2 %</text>
+<text x="132" y="516" font-size="12" fill="#f5f5f5" text-anchor="end" >Kroatien</text>
+<rect x="325.200" y="505" width="48" height="14" fill="#2d3142"/>
+<text x="327.200" y="516" font-size="12" fill="#f5f5f5" data-label="Kroatien" >21,4 %</text>
+<text x="132" y="532" font-size="12" fill="#f5f5f5" text-anchor="end" >Malta</text>
+<rect x="265.200" y="521" width="48" height="14" fill="#2d3142"/>
+<text x="267.200" y="532" font-size="12" fill="#f5f5f5" data-label="Malta" >13,9 %</text>
+<line x1="148" y1="544" x2="708" y2="544" stroke="rgba(245,245,245,0.25)"/>
+<text x="428" y="592" font-size="12" fill="#bfc0c0" text-anchor="middle">Andel af rapporteret EU-budget (%)</text>
+<line x1="24" y1="608" x2="736" y2="608" stroke="rgba(245,245,245,0.12)"/>
+<text x="24" y="624" font-size="12" fill="#bfc0c0" >27 lande · rækkefølge og afrundede tal fra brugerens billede</text>
+<text x="24" y="640" font-size="12" fill="#bfc0c0" >Illustration af layout · ikke kildevaliderede budgettal</text>
+</svg>
+    </div>
+
+  </main>
+</body>
+</html>
