@@ -1,6 +1,6 @@
 ---
 name: diagram-design
-description: Create branded architecture, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, Venn, pyramid/funnel, treemap, bar, waterfall, line, Gantt and scatter charts, high-level, process, medallion, data flow, DP integration, DP security matrix, Sankey, fishbone, Wardley map, kanban, user journey, deployment, dependency graph, UML class, story map, or database schema diagrams as standalone HTML/SVG/PNG. Redraw .drawio/.drawio.png/.drawio.svg, Mermaid .mmd, or Excalidraw .excalidraw sources at a chosen size/detail; onboard brand tokens from a website; add semantic patterns, callouts, accessible motion, or sketchy/hand-drawn styling.
+description: Create branded architecture, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, Venn, pyramid/funnel, treemap, bar (compact country rankings), waterfall, line, Gantt and scatter charts, high-level, process, medallion, data flow, DP integration, DP security matrix, Sankey, fishbone, Wardley map, kanban, user journey, deployment, dependency graph, UML class, story map, or database schema diagrams as standalone HTML/SVG/PNG. Redraw .drawio/.drawio.png/.drawio.svg, Mermaid .mmd, or Excalidraw .excalidraw sources at a chosen size/detail; onboard brand tokens from a website; add semantic patterns, callouts, accessible motion, or sketchy/hand-drawn styling.
 license: MIT
 metadata:
   version: "2.6"
@@ -43,7 +43,7 @@ Applied to schematics:
 - Coral is **editorial, not a flag.** 1–2 focal nodes per diagram. Using it on 5 nodes erases the signal.
 - The schematic isn't done when everything is added. It's done when nothing can be removed.
 
-**Target density: 4/10.** Enough to be technically complete. Not so dense it needs a guide. Above 9 nodes, it's probably two diagrams.
+**Target density: 4/10.** Follow §7: chart rows have different limits from schematic nodes.
 
 ---
 
@@ -77,7 +77,7 @@ When behavior, state, enforcement, or risk carries the meaning, first load [`ref
 | Defenses compensate for prior gaps and residual risk propagates | **Compensating security layers** → Layer stack |
 | Hierarchical, ID-addressable decomposition needing per-block I/O, constraints, and a code link | **Traceable block decomposition** → Tree |
 
-The pattern owns semantic primitives and its tighter budget; the type owns layout grammar. Use [`references/animation.md`](references/animation.md) only when motion is requested or materially clarifies ordered change; static remains the default.
+Patterns own semantic primitives; types own layout. Load [animation.md](references/animation.md) for requested or explanatory motion; default to static.
 
 ### Visual-type guide (40)
 
@@ -101,7 +101,7 @@ The pattern owns semantic primitives and its tighter budget; the type owns layou
 | Stacked abstraction levels | **Layer stack** | [type-layers.md](references/type-layers.md) |
 | Overlap between sets | **Venn** | [type-venn.md](references/type-venn.md) |
 | Ranked hierarchy or conversion drop-off | **Pyramid / funnel** | [type-pyramid.md](references/type-pyramid.md) |
-| Quantitative comparison across categories | **Bar chart** | [type-bar.md](references/type-bar.md) |
+| Quantities across categories, including compact country rankings | **Bar chart** | [type-bar.md](references/type-bar.md) |
 | A start total bridged to an end total by signed contributions (budget bridge, headcount deltas) | **Waterfall** | [type-waterfall.md](references/type-waterfall.md) |
 | Part-of-whole where the relative sizes are the story | **Treemap** | [type-treemap.md](references/type-treemap.md) |
 | Continuous trends over time, change between exactly two states (slopegraph), one distribution per series (ridgeline), or rank movement across several snapshots (bump) | **Line chart** | [type-line.md](references/type-line.md) |
@@ -360,9 +360,9 @@ Expand SVG `viewBox` height by ~60px.
 | Padding inside boxes | 8, 12, 16 |
 | Border radius | 4, 6, 8 |
 
-Exempt: stroke widths (0.8, 1, 1.2), opacity values, and the 22×22 dot-pattern.
+Exempt: strokes, opacity, the 22×22 dot-pattern, and data-derived chart positions/dimensions (never round values to the grid).
 
-Quick check: if a coordinate ends in 1, 2, 3, 5, 6, 7, 9 — fix it.
+Check layout coordinates, not quantitative marks.
 
 ### Complexity budget (per diagram)
 
@@ -391,7 +391,7 @@ Quick check: if a coordinate ends in 1, 2, 3, 5, 6, 7, 9 — fix it.
 | Max polar categories | 8 |
 | Max polar series | 1 |
 | Max focal polar categories | 1 |
-| Max bars (bar chart) | 8 |
+| Max bars (bar chart) | 8; compact ranking: 30 rows, 2 benchmarks |
 | Max bars (waterfall) | 8 incl. totals, 1 subtotal |
 | Max cells (treemap) | 8 |
 | Max series (line chart) | 5 |

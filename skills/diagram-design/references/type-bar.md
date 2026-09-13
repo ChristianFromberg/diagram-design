@@ -6,7 +6,7 @@
 
 - **Orientation:** Vertical bars (columns) are default. Horizontal bars are appropriate when category labels are long or you have more than 8 categories.
 - **Plot area margins:** left 80px (y-axis labels), bottom 60px (x-axis labels), top 40px, right 40px — inside a `0 0 1000 500` viewBox.
-- **Bar count cap:** 4–8 bars. More than 8 → group into periods or split into two charts.
+- **Bar count cap:** 4–8 bars for the standard chart. For a complete ranked comparison of 9–30 categories (for example all 27 EU countries), use the [compact ranking variant](bar-ranking.md); do not aggregate or drop countries to satisfy the standard cap.
 - **Bar width:** ≥ 50% of the column pitch (the gap should never exceed the bar). Typical: pitch=110px, bar=72px.
 - **Y-axis gridlines:** 4–6 horizontal lines at regular intervals. Stroke `rgba(45,49,66,0.08)` (very faint), 0.8px. X-axis baseline at `rgba(45,49,66,0.25)`, 1px.
 - **Y-axis labels:** right-aligned Geist Mono 8px muted, at x=72 (8px left of the plot area).
@@ -104,3 +104,5 @@ Two of these rules live in a formula rather than a drawing, so they are executab
 - `assets/example-bar.html` — minimal light
 - `assets/example-bar-dark.html` — minimal dark
 - `assets/example-bar-full.html` — full editorial
+
+For dense horizontal rankings, benchmarks, and a highlighted country, load [bar-ranking.md](bar-ranking.md). This remains a bar-chart variant: length from zero encodes one value per category.
